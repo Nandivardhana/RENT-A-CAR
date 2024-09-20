@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car - Home</title>
+    <link rel="stylesheet" href="js/css/styles.css">
+    <style>
+        /* Smooth scroll behavior for all anchors */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<script>
+    // JavaScript function to handle 'More Details' button click
+    function showDetails(carName) {
+        alert(`Details for ${carName}: \nThis car is available for rent at an affordable price. Contact us for more info.`);
+    }
+
+    // JavaScript function to handle 'Book a Car' button click
+    function bookCar(carName) {
+        const userName = prompt(`Booking form for ${carName}:\nPlease enter your name:`);
+        if (userName) {
+            alert(`Thank you, ${userName}! Your booking for ${carName} has been received. We will contact you shortly.`);
+        } else {
+            alert("Booking canceled.");
+        }
+    }
+
+    // JavaScript function to scroll to the car gallery section
+    function scrollToCarGallery() {
+        document.getElementById('car-gallery').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+<body>
+    <header>
+        <h1 class="logo-heading">
+            <img src="css/car.jpg" class="logo-img" alt="Rent a Car">
+            Rent a Car
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Find Your Perfect Rental Car</h1>
+            <p>Easy, Fast, and Reliable Car Rentals.</p>
+            <button onclick="scrollToCarGallery()">Browse Cars</button>
+        </section>
+
+        <!-- Car Gallery Section -->
+        <section id="car-gallery" class="car-container">
+            <h3>AVAILABLE CARS</h3>
+            <div class="car-wrapper">
+                <div class="car-card">
+                    <img src="js\css\image3.png" alt="Car 1">
+                    <h2>Car Model 1</h2>
+                    <p>Price: $50/day</p>
+                    <button class="book-btn" onclick="bookCar('Car Model 1')">Book a Car</button>
+                    <button class="more-details-btn" onclick="showDetails('Car Model 1')">More Details</button>
+                </div>
+                <div class="car-card">
+                    <img src="js/css/image4.png" alt="Car 2">
+                    <h2>Car Model 2</h2>
+                    <p>Price: $60/day</p>
+                    <button class="book-btn" onclick="bookCar('Car Model 2')">Book a Car</button>
+                    <button class="more-details-btn" onclick="showDetails('Car Model 2')">More Details</button>
+                </div>
+                <div class="car-card">
+                    <img src="js/css/image5.png" alt="Car 3">
+                    <h2>Car Model 3</h2>
+                    <p>Price: $70/day</p>
+                    <button class="book-btn" onclick="bookCar('Car Model 3')">Book a Car</button>
+                    <button class="more-details-btn" onclick="showDetails('Car Model 3')">More Details</button>
+                </div>
+                <div class="car-card">
+                    <img src="js/css/image6.png" alt="Car 4">
+                    <h2>Car Model 4</h2>
+                    <p>Price: $55/day</p>
+                    <button class="book-btn" onclick="bookCar('Car Model 4')">Book a Car</button>
+                    <button class="more-details-btn" onclick="showDetails('Car Model 4')">More Details</button>
+                </div>
+                <div class="car-card">
+                    <img src="js/css/image7.png" alt="Car 5">
+                    <h2>Car Model 5</h2>
+                    <p>Price: $65/day</p>
+                    <button class="book-btn" onclick="bookCar('Car Model 5')">Book a Car</button>
+                    <button class="more-details-btn" onclick="showDetails('Car Model 5')">More Details</button>
+                </div>
+                <div class="car-card">
+                    <img src="js/css/image6.png" alt="Car 6">
+                    <h2>Car Model 6</h2>
+                    <p>Price: $45/day</p>
+                    <button class="book-btn" onclick="bookCar('Car Model 6')">Book a Car</button>
+                    <button class="more-details-btn" onclick="showDetails('Car Model 6')">More Details</button>
+                </div>
+                <div class="car-card">
+                    <img src="js/css/image4.png" alt="Car 7">
+                    <h2>Car Model 7</h2>
+                    <p>Price: $75/day</p>
+                    <button class="book-btn" onclick="bookCar('Car Model 7')">Book a Car</button>
+                    <button class="more-details-btn" onclick="showDetails('Car Model 7')">More Details</button>
+                </div>
+                <div class="car-card">
+                    <img src="js/css/image7.png" alt="Car 8">
+                    <h2>Car Model 8</h2>
+                    <p>Price: $85/day</p>
+                    <button class="book-btn" onclick="bookCar('Car Model 8')">Book a Car</button>
+                    <button class="more-details-btn" onclick="showDetails('Car Model 8')">More Details</button>
+                </div>
+                <div class="car-card">
+                    <img src="js/css/image1.png" alt="Car 9">
+                    <h2>Car Model 9</h2>
+                    <p>Price: $90/day</p>
+                    <button class="book-btn" onclick="bookCar('Car Model 9')">Book a Car</button>
+                    <button class="more-details-btn" onclick="showDetails('Car Model 9')">More Details</button>
+                </div>
+                <div class="car-card">
+                    <img src="js/css/image2.png" alt="Car 10">
+                    <h2>Car Model 10</h2>
+                    <p>Price: $80/day</p>
+                    <button class="book-btn" onclick="bookCar('Car Model 10')">Book a Car</button>
+                    <button class="more-details-btn" onclick="showDetails('Car Model 10')">More Details</button>
+                </div>
+            </div>
+            <button id="viewMoreBtn" class="view-more-btn">View More</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at <a href="mailto:info@rentacar.com">info@rentacar.com</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('viewMoreBtn').addEventListener('click', function() {
+            window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+</html>
